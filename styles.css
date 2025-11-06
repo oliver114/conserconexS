@@ -150,6 +150,7 @@ a:hover {
 }
 
 /* ===== HEADER TOP BAR ===== */
+/* HEADER TOP (se queda igual) */
 .header-top {
     background: var(--gray-900);
     color: var(--white);
@@ -168,23 +169,43 @@ a:hover {
     color: var(--accent-color);
 }
 
+/* REDES SOCIALES (solo colores de los íconos) */
 .top-social a {
-    color: var(--white);
+    color: #FFFFFF;
     margin-left: 1rem;
     width: 30px;
     height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: var(--transition-normal);
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
+/* Facebook */
+.top-social a:nth-child(1) {
+    background-color: #1877F2;
+}
+
+/* Instagram */
+.top-social a:nth-child(2) {
+    background: linear-gradient(45deg, #F9CE34, #EE2A7B, #6228D7);
+}
+
+/* LinkedIn */
+.top-social a:nth-child(3) {
+    background-color: #0A66C2;
+}
+
+/* WhatsApp */
+.top-social a:nth-child(4) {
+    background-color: #25D366;
+}
+
+/* Hover efecto */
 .top-social a:hover {
-    background: var(--primary-color);
-    color: var(--white);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
 
 /* ===== NAVBAR ===== */
